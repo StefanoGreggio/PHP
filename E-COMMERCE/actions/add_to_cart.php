@@ -4,6 +4,11 @@ require '../models/Classes.php';
 
 session_start();
 
+if(!isset($_SESSION['current_user'])){
+    header("location: ../views/login.php");
+    exit();
+}
+
 $user = $_SESSION['current_user'];
 $cart = Cart::Find($user->GetID());
 
