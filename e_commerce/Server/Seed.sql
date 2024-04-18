@@ -1,0 +1,1 @@
+INSERT INTO ecommerce.products (nome, prezzo, marca) VALUES ('Smartphone XYZ', 599.99, 'XYZ Electronics');
